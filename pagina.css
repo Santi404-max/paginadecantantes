@@ -20,7 +20,6 @@ h2 {
     font-family: Georgia, 'Times New Roman', Times, serif;
     margin: 30px 0 10px;
     text-align: center;
-    text-decoration: underline;
     text-decoration-color: rgb(0, 0, 0);
 }
 
@@ -34,33 +33,42 @@ header {
 }
 
 .phead {
+    padding-bottom: 20px;
     font-size: 20px;
 }
 
-.div1 {
-    display: flex;
-    justify-content: center;
-    gap: 5px;
-    align-items: center;
-}
 
 .imagen1 {
-    height: 20px;
+    height: 50px;
+}
+
+.div1{
+    margin: 0 100px 0 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
 }
 
 nav {
     display: flex;
-    align-items: center;
     justify-content: center;
     gap: 20px;
-    height: 100px;
     background-color: black;
     color: white;
 }
-
+.nav2{
+height: 100px;
+align-items: center;
+position: sticky;
+top: 0;
+padding: 10px;
+}
 #cantantes {
+    font-family: 'Times New Roman', Times, serif;
+    margin: 0 100px 0 300px;
     font-size: 40px;
-    color: aliceblue;
+    color: rgb(255, 255, 255);
     text-decoration: none;
 }
 
@@ -79,7 +87,7 @@ nav {
 
 .side-menu {
     position: fixed;
-    left: -250px; 
+    left: 0px; 
     top: 0;
     width: 250px;
     height: 100%;
@@ -92,7 +100,7 @@ nav {
 }
 
 .side-menu.active {
-    left: 0;
+    left: -250px;
 }
 
 .side-menu a {
@@ -108,18 +116,20 @@ nav {
 }
 
 main {
-    margin: 0 100px;
+    margin: 0 100px 0 300px;
+
 }
 
 .cant {
+    text-decoration: underline;
     margin: 20px 0 40px;
 }
 
 .lol, .card {
     margin: auto;
     display: flex;
-    justify-content: center;
-    text-align: center;
+    margin: 20px 0 20px 0;
+    padding: 30px;
     gap: 20px;
 }
 
@@ -133,12 +143,14 @@ main {
 }
 
 .ama {
-    height: 200px;
+    width: 380px;
     border: 10px solid rgb(165, 0, 0);
+    object-fit: cover;
 }
 
 .cro {
-    height: 80px;
+    justify-content: center;
+    text-align: center;
 }
 
 .pduk {
@@ -213,6 +225,12 @@ li a:hover {
         padding: 0 10px;
         line-height: 1.4;
     }
+    .side-menu{
+        left: -250px;
+    }
+    .side-menu.active{
+        left: 0;
+    }
 }
 
 @media (max-width: 600px) {
@@ -221,10 +239,131 @@ li a:hover {
     }
 }
 
-.btn-info {
+dialog{
+    border: none;
+}
+dialog::backdrop{
+    background: rgba(0,0,0,0.8);
+}
+
+.h1moda{
+    font-family: 'Times New Roman', Times, serif;
+    text-decoration: underline;
+    margin-bottom: 30px;
+    color: rgb(255, 0, 0);
+}
+
+.modal {
+    padding: 500px;
+    margin: 200px auto;
+    margin-bottom: 400px;
+    width: 500px;
+    padding: 20px;
+    border-radius: 10px;
+    background: rgb(0, 0, 0);
+    box-shadow: 10px;
+    text-align: center;
+    position: absolute;
+}
+.modal li{
+    color: white;
+    background-color: rgb(0, 0, 0);
+}
+.modal ul{
+    gap: 15px;
+}
+
+.modal2 {
+    padding: 500px;
+    margin: 200px auto;
+    width: 500px;
+    padding: 20px;
+    border-radius: 10px;
+    background: rgb(0, 0, 0);
+    box-shadow: 10px;
+    text-align: center;
+    position: absolute;
+}
+.modal2 li{
+        color: white;
+    background-color: rgb(0, 0, 0);
+}
+.modal ul{
+    gap: 15px;
+}
+
+.modal3 {
+    padding: 500px;
+    margin: 200px auto;
+    width: 500px;
+    padding: 20px;
+    border-radius: 10px;
+    background: rgb(0, 0, 0);
+    box-shadow: 10px;
+    text-align: center;
+    position: absolute;
+}
+.modal3 li{
+    color: white;
+    background-color: rgb(0, 0, 0);
+}
+.modal ul{
+    gap: 15px;
+}
+
+.modal4 {
+    padding: 500px;
+    margin: 200px auto;
+    width: 500px;
+    padding: 20px;
+    border-radius: 10px;
+    background: rgb(0, 0, 0);
+    box-shadow: 10px;
+    text-align: center;
+    position: absolute;
+}
+.modal4 li{
+    color: white;
+    background-color: rgb(0, 0, 0);
+}
+.modal ul{
+    gap: 15px;
+}
+
+.modal5 {
+    padding: 500px;
+    margin: 200px auto;
+    width: 500px;
+    padding: 20px;
+    border-radius: 10px;
+    background: rgb(0, 0, 0);
+    box-shadow: 10px;
+    text-align: center;
+    position: absolute;
+}
+.modal5 li{
+    color: white;
+    background-color: rgb(0, 0, 0);
+}
+.modal ul{
+    gap: 15px;
+}
+
+#bttcerr {
+    background: rgb(255, 0, 0);
+    font-size: 15px;
+    padding: 10px;
+    position: absolute;
+    cursor: pointer;
+    right: 10px;
+    top: 10px;
+    border-radius: 10px;
+}
+
+.btn-abrir {
     display: inline-block;
-    background-color: rgb(255, 128, 128);
-    color: black;
+    background-color: rgb(255, 0, 0);
+    color: rgb(0, 0, 0);
     padding: 10px 40px;
     font-size: 20px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
