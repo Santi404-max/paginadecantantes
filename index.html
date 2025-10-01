@@ -9,8 +9,8 @@
 <body>
     <header>
         <div class="menu-toggle" id="menu-toggle">&#9776;</div>
-        <p class="phead">seguime en</p>
         <div class="div1">
+            <h2 class="phead">Seguime en</h2>
             <a href="https://www.instagram.com/_santi404?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="><img src="imgs/ig.png" alt="Icon 1" class="imagen1" /></a>
         </div>
     </header>
@@ -23,8 +23,8 @@
         <a href="#ysya">Alejo Nahuel Acosta</a>
     </nav>
 
-    <nav>
-        <a href="#" id="cantantes">Cantantes de Trap ARG</a>
+    <nav class="nav2">
+        <h1 id="cantantes">Cantantes Argentinos</h1>
     </nav>
 
     <main>
@@ -35,11 +35,20 @@
                 <div class="cro">
                     <h3>Tomás Manuel Campos</h3>
                     <p>
-                        Tomás Manuel Campos mejor conocido como "C.R.O" es un cantante de trap, rap, hip‑hop, boom bap, rock, pop, electrónica y reguetón. Inició como freestyler en 2014 y luego se enfocó en la música. Es miembro de los proyectos MDBCrew y Bardero$. Lo curioso es que es conocido como "el artista de los 100 géneros".
+                        Tomás Manuel Campos mejor conocido como "C.R.O" es un cantante de trap, rap, hip‑hop, boom bap, rock, pop, electrónica y reguetón Argentino. Inició como freestyler en 2014 y luego se enfocó en la música. Es miembro de los proyectos MDBCrew y Bardero$. Lo curioso es que es conocido como "el artista de los 100 géneros".
                         Su versatilidad musical le ha permitido colaborar con diversos artistas de distintos estilos, lo que ha enriquecido su sonido y consolidado su lugar en la escena urbana. Además, su lírica suele abordar temas cotidianos con un toque personal y reflexivo.
                     </p>
-                    <a href="https://es.wikipedia.org/wiki/C.R.O_(m%C3%BAsico)" class="btn-info">+info</a>
-
+                        <dialog class="modal">
+                            <h1 class="h1moda">Informacion Extra</h1>
+                                <ul >
+                                    <li>Fecha Nacimiento: 11 de septiembre de 1998 (27 años)</li>
+                                    <li>Nacimiento: Chos Malal, provincia del Neuquén (Argentina)</li>
+                                    <li>Discográfica:	Nocita Music-Dale Play Records</li>
+                                    <li>Ocupación:	Rapero, cantante, modelo y compositor</li>
+                                </ul>
+                        <button id="bttcerr" onclick="document.querySelector('.modal').close()">X</button>
+                        </dialog>
+                    <button class="btn-abrir" onclick="document.querySelector('.modal').showModal()">+info</button>
                 </div>
             </article>
             <hr />
@@ -51,7 +60,17 @@
                         Lucas Dario Gimenez, mejor conocido como "Homer El Mero Mero", es un cantante de rap, RKT, trap y música urbana. Se consolidó dentro del rap argentino de barrio y ganó visibilidad como integrante de Bardero$. Ha lanzado EPs como Por clave el Cabezón y participado en festivales y colaboraciones clave dentro de la escena urbana.
                         Su estilo se caracteriza por letras crudas y auténticas que reflejan la realidad de las calles, conectando con un público joven y diverso. Además, su energía en vivo y su carisma lo han convertido en una figura destacada dentro del género.
                     </p>
-                    <a href="https://es.wikipedia.org/wiki/Homer_el_Mero_Mero" class="btn-info">+info</a>
+                        <dialog class="modal2">
+                            <h1 class="h1moda">Informacion Extra</h1>
+                                <ul>
+                                    <li>Fecha Nacimiento: 5 de junio de 1990 (35 años)</li>
+                                    <li>Nacimiento: Cutral Co, provincia del Neuquén (Argentina)</li>
+                                    <li>Discográfica:	Nocita Music-Dale Play Records</li>
+                                    <li>Ocupación:	Cantante, rapero, actor</li>
+                                </ul>
+                            <button id="bttcerr" onclick="document.querySelector('.modal2').close()">X</button>
+                        </dialog>
+                    <button class="btn-abrir" onclick="document.querySelector('.modal2').showModal()">+info</button>
 
                 </div>
             </article>
@@ -64,12 +83,21 @@
                     Mejor conocido como "Duki", el rey del trap argentino. Tocó géneros como trap latino, salsa, R&B, drill, dancehall, punk rock, rock y electro‑dance. Comenzó en las batallas de freestyle de El Quinto Escalón. En 2017 lanzó No Vendo Trap, se convirtió en ícono del trap argentino y fundó el colectivo Modo Diablo con YSY A y Neo Pistea. Ha llenado estadios como el WiZink (Madrid) y Santiago Bernabéu.
                     Su estilo innovador y su capacidad para fusionar distintos géneros lo han hecho trascender fronteras, consolidándolo como uno de los artistas más influyentes de la música urbana en Latinoamérica. Además, su impacto cultural ha inspirado a toda una generación de nuevos talentos.
                     </p>
-                    <a href="https://es.wikipedia.org/wiki/Duki" class="btn-info">+info</a>
-
+                        <dialog class="modal3">
+                            <h1 class="h1moda">Informacion Extra</h1>
+                                <ul>
+                                    <li>Fecha Nacimiento: 24 de junio de 1996 (29 años)</li>
+                                    <li>Nacimiento: Almagro, Buenos Aires (Argentina)</li>
+                                    <li>Discográfica: Mueva Records (2017-2018), SSJ Records (2018-2019), Dale Play (desde 2019)</li>
+                                    <li>Ocupación: Rapero y compositor</li>
+                                </ul>
+                            <button id="bttcerr" onclick="document.querySelector('.modal3').close()">X</button>
+                        </dialog>
+                    <button class="btn-abrir" onclick="document.querySelector('.modal3').showModal()">+info</button>
                 </div>
             </article>
             <hr />
-            <article class="card" id="neo">
+            <article class="card" id="neo">/*
                 <img src="imgs/NeoPistea.jpg" alt="Sebastián Ezequiel Chinellato" class="ama" />
                 <div class="cro">
                     <h3>Sebastián Ezequiel Chinellato</h3>
@@ -77,8 +105,17 @@
                         Mejor conocido como "Neo Pistea", canta principalmente trap con mixtapes que incluyen influencias de otros estilos urbanos. Debutó en 2015 con mixtapes como Tony The Kid. En 2017 lanzó el EP Oro y Perfume. Formó parte de Modo Diablo junto a Duki y YSY A, siendo clave para la consolidación del trap argentino.
                         Su estilo distintivo combina ritmos agresivos con letras introspectivas, lo que le ha ganado un lugar destacado en la escena. Además, su constante innovación y colaboraciones han fortalecido su reputación como uno de los referentes del trap nacional.
                     </p>
-                    <a href="https://es.wikipedia.org/wiki/Neo_Pistea" class="btn-info">+info</a>
-
+                    <dialog class="modal4">
+                            <h1 class="h1moda">Informacion Extra</h1>
+                                <ul>
+                                    <li>Fecha Nacimiento: 5 de octubre de 1994 (30 años)</li>
+                                    <li>Nacimiento: Merlo, provincia de Buenos Aires (Argentina)</li>
+                                    <li>Discográfica: Sony Music (2021-23), Dale Play Records (2024-act)</li>
+                                    <li>Ocupación: compositor, rapero, trapero y actor</li>
+                                </ul>
+                            <button id="bttcerr" onclick="document.querySelector('.modal4').close()">X</button>
+                        </dialog>
+                    <button class="btn-abrir" onclick="document.querySelector('.modal4').showModal()">+info</button>
                 </div>
             </article>
             <hr />
@@ -92,7 +129,17 @@
 
 
                     </p>
-                    <a href="https://es.wikipedia.org/wiki/YSY_A" class="btn-info">+info</a>
+                    <dialog class="modal5">
+                            <h1 class="h1moda">Informacion Extra</h1>
+                                <ul>
+                                    <li>Fecha Nacimiento: 12 de julio de 1998 (27 años)</li>
+                                    <li>Nacimiento: Villa Crespo, Buenos Aires (Argentina)</li>
+                                    <li>Discográfica: NEÜEN (2018-2019), Sponsor Dios (2020-presente)</li>
+                                    <li>Ocupación: Trap latino, Hip hop latino, EDM, House, Freestyle</li>
+                                </ul>
+                            <button id="bttcerr" onclick="document.querySelector('.modal5').close()">X</button>
+                        </dialog>
+                    <button class="btn-abrir" onclick="document.querySelector('.modal5').showModal()">+info</button>
 
                 </div>
             </article>
@@ -101,12 +148,14 @@
 
     <footer>
         <ul class="foterxs">
-            <li class="li1"><a href="#">About</a></li>
-            <li class="li1"><a href="#">Take Care</a></li>
-            <li class="li1"><a href="#">Apps</a></li>
-            <li class="li1"><a href="#">FAQs</a></li>
-            <li class="li1"><a href="#">Terms of Use</a></li>
-            <li class="li1"><a href="#">Privacy and Cookie Policy</a></li>
+            <li class="li1"><a href="#">&copy; Cantantes de trap ARG</a></li>
+            <li class="li1"><a href="#">Duarte Santiago</a></li>
+            <li class="li1"><a href="#">3ro 4ta</a></li>
+            <li class="li1"><a href="#">C.R.O</a></li>
+            <li class="li1"><a href="#">Homer El Mero Mero</a></li>
+            <li class="li1"><a href="#">Duki</a></li>
+            <li class="li1"><a href="#">Neo Pistea</a></li>
+            <li class="li1"><a href="#">Ysy A</a></li>
         </ul>
     </footer>
 
@@ -123,6 +172,8 @@
                 menu.classList.remove('active');
             });
         });
+
+
     </script>
 </body>
 </html>
